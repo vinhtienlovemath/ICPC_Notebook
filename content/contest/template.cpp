@@ -1,14 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define rep(i, a, b) for(int i = a; i < (b); ++i)
-#define all(x) begin(x), end(x)
-#define sz(x) (int)(x).size()
-typedef long long ll;
-typedef pair<int, int> pii;
-typedef vector<int> vi;
+#define sqr(x) ((x) * (x))
 
-int main() {
-	cin.tie(0)->sync_with_stdio(0);
-	cin.exceptions(cin.failbit);
+void solve();
+void multiTestCasesSolve();
+
+int main () {
+  ios::sync_with_stdio(0);
+  cin.tie(NULL);
+  multiTestCasesSolve();
+  return 0;
 }
+
+void multiTestCasesSolve() {
+  //freopen("INP.txt", "r", stdin);
+  //freopen("OUT.txt", "w", stdout);
+  
+  //Multiple test cases, default one test case.
+  int nTestCases = 1;
+  //cin >> nTestCases;
+  for(int index = 1; index <= nTestCases; ++index) {
+    solve();
+  }
+  
+  //cerr << "\nTime elapsed: " << 1000 * clock() / CLOCKS_PER_SEC << "ms\n"; 
+}
+
+void solve() { }
